@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     console.log($("#topl li"))
     $("#topl li").click(function(){
-        $(".ins-cover").css("animation","instrans 2s steps(50) forwards ")
+        $(".ins-cover").css("animation","instrans 2s steps(20) forwards ")
         var oldn="."+$(".checked").html().toLowerCase()
         var oldi = $(".checked").index()
         var newn="."+$(this).html().toLowerCase()
@@ -67,7 +67,7 @@ $(document).ready(function(){
         function changeSec(){
             $(oldn).css("display","none");
             $(newn).css("display","block");
-            setTimeout(function(){$(".ins-cover").css("animation","")},2000)
+            
             $(".heart").removeClass("scaleUp")
             $(".cmt").removeClass("scaleUp")
            
@@ -76,6 +76,7 @@ $(document).ready(function(){
         }
         function changeIns(){
             $(".ins-photo").css({"background-image":"url(img/ins"+newi+".png)"})
+            setTimeout(function(){$(".ins-cover").css("animation","")},1000)
         }
     }) 
     }
