@@ -8,7 +8,7 @@ var text3 =["_dedecam","2,243","127","CAPTURE LIFE","with panasonic G7"]
 var text4 =["mail_x2","1,733","224","TO CONTACT","Welcome!"]
 var texts=[text1,text2,text3,text4]
 var item1=[".about p",".about h2",".softul",".ability"]
-var item2=[".sec1",".sec2",".sec3",".sec4",".sec5",".sec6",".sec7"]
+var item2=[".sec1",".sec2",".sec3",".sec4",".sec5",".sec6",".sec7",".sec8"]
 var item3=[".life1",".life2",".life3",".life4"]
 var item4=[".profile",".weixin",".weibo",".email"]
 var items=[item1,item2,item3,item4]
@@ -18,8 +18,8 @@ $(document).ready(function(){
     // console.log(loadblocks )
     // console.log(loading )
     tl
-        .staggerTo(loadblocks,0.1,{opacity:0,ease:Power0.easeNone},0.01,"+=3")
-        .to("#loading img",1,{scale:0,ease:SlowMo.ease.config(0.7, 0.7, false)},"-=1")
+        // .staggerTo(loadblocks,0.1,{opacity:0,ease:Power0.easeNone},0.01,"+=3")
+        // .to("#loading img",1,{scale:0,ease:SlowMo.ease.config(0.7, 0.7, false)},"-=1")
         .staggerFromTo([".instagram",".project",".title"],0.3,{autoAlpha:0,x:20,y:20},{autoAlpha:1,x:0,y:0,ease:Back.easeOut},0.2)
         .staggerFromTo([".ins-profile",".ins-bg",".ins-photo",".ins-button"],0.2,{autoAlpha:0,y:20},{autoAlpha:1,y:0,ease:Back.easeOut},0.18,"-=0.8")
         .staggerFromTo([".about p",".about h2",".softul",".ability"],0.15,{autoAlpha:0,y:20},{autoAlpha:1,y:0,ease:Back.easeOut},0.12,"-=0.4")
