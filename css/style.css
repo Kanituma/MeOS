@@ -494,14 +494,14 @@ a.link:hover{
     /* display: none; */
     position: relative;
     /* display: none; */
-    line-height: 40px;
+    
 }
 
 
 .about p {
     font-family: "zpix";
     text-indent: 2em;
-
+    line-height: 40px;
 }
 
 
