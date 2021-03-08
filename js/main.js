@@ -76,7 +76,7 @@ $(document).ready(function(){
             // setTimeout(function(){$(".since").removeClass("bar")},1000)
         }
         function changeIns(){
-            $(".ins-photo").css({"background-image":"url(../img/ins"+newi+".png)"})
+            $(".ins-photo").css({"background-image":"url(img/ins"+newi+".png)"})
         }
     }) 
     }
