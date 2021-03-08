@@ -18,7 +18,7 @@ $(document).ready(function(){
     // console.log(loadblocks )
     // console.log(loading )
     tl
-        // .staggerTo(loadblocks,0.01,{opacity:0,ease:Power0.easeNone},0.003,"+=3")
+        .staggerTo(loadblocks,0.01,{opacity:0,ease:Power0.easeNone},0.003,"+=3")
         .to("#loading img",1,{scale:0,ease:SlowMo.ease.config(0.7, 0.7, false),onComplete:function(){
             $("#loading").remove()
         }},"-=1")
