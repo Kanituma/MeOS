@@ -490,9 +490,11 @@ a.link:hover{
     left: 50%;
     top: 48%;
     transform: translate(-50%,-50%);
+    padding: 10px 25px;
     /* display: none; */
     position: relative;
     /* display: none; */
+    line-height: 40px;
 }
 
 
