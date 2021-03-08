@@ -18,10 +18,10 @@ $(document).ready(function(){
     // console.log(loadblocks )
     // console.log(loading )
     tl
-        // .staggerTo(loadblocks,0.01,{opacity:0,ease:Power0.easeNone},0.003,"+=3")
-        // .to("#loading img",1,{scale:0,ease:SlowMo.ease.config(0.7, 0.7, false),onComplete:function(){
-        //     $("#loading").remove()
-        // }},"-=1")
+        .staggerTo(loadblocks,0.01,{opacity:0,ease:Power0.easeNone},0.003,"+=3")
+        .to("#loading img",1,{scale:0,ease:SlowMo.ease.config(0.7, 0.7, false),onComplete:function(){
+            $("#loading").remove()
+        }},"-=1")
         .staggerFromTo([".instagram",".project",".title"],0.3,{autoAlpha:0,x:20,y:20},{autoAlpha:1,x:0,y:0,ease:Back.easeOut},0.2)
         .staggerFromTo([".ins-profile",".ins-bg",".ins-photo",".ins-button"],0.2,{autoAlpha:0,y:20},{autoAlpha:1,y:0,ease:Back.easeOut},0.15,"-=0.8")
         .staggerFromTo([".about p",".about h2",".softul",".ability"],0.15,{autoAlpha:0,y:20},{autoAlpha:1,y:0,ease:Back.easeOut},0.1,"-=0.4")
