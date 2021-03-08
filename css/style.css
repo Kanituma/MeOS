@@ -11,6 +11,7 @@ body {
     overflow: hidden;
     /* animation-duration: 3s; */
     /* animation-timing-function:step-start */
+    background-color: rgb(255, 254, 245);;
     
     
 }
@@ -36,6 +37,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     height: 50px;
     border: 3px solid #000;
     box-sizing: border-box;
+    background-color: white;
 }
 ul, ul li ,li{
     float: left;
@@ -264,7 +266,7 @@ div.instagram{
     /* background:url(img/frame2.png) no-repeat; */
     background-size: cover;
     image-rendering: pixelated;
-    background-color: white;
+    background-color:white;
     z-index: -1;
 }
 .project::after {
