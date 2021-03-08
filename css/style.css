@@ -84,7 +84,7 @@ ul li img {
     display: flex;
     -webkit-flex-flow: column wrap;
     justify-content: flex-start;
-    display: none;
+    /* display: none; */
 }
 #loading img {
     position: absolute;
