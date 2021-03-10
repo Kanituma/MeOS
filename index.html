@@ -11,29 +11,36 @@
 </head>    
 <body>
     <div id="loading">
-        <img src="img/star.gif" alt="">
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-        <div class="loadblock"></div>
-      
-
+        <img src="img/logoani.gif" alt="">
+        <div id="progressbar">
+            <div id="progress">0</div>
+            <div id="outbar">
+                <div id="inbar"></div>
+            </div>
+            
+        </div>
+        <div class="loadblocks">
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+            <div class="loadblock"></div>
+        </div>
     </div>
     <div class="menu-button">
         <!-- <div class="head-logo"></div> -->
@@ -197,7 +204,7 @@
                     <span class="divwork">UX&nbsp;&&nbsp;UI</span>
                     <div class="linkdiv">
                         <a class="link" href="https://www.bilibili.com/video/BV1c5411P7s2" target="_blank">查看视频</a>
-                        <a class="link" href="http://okasus.gitee.io/pdf/web/" target="_blank">产品文档</a>
+                        <a class="link" href="https://www.zcool.com.cn/work/ZNTEyNDM4NDA=.html" target="_blank">产品文档</a>
                     </div>
                 </div>
                 <p class="sec-title">口袋急救<span style="display:inline-block;color: #b577da;font-size: 16px;font-weight:bold;">.apk</span></p>
@@ -318,17 +325,85 @@
 var queue = new createjs.LoadQueue(false);
 var tl = new TimelineMax({});
 var loadblocks = $(".loadblock").toArray().sort(function(){return 0.5-Math.random()});
-queue.loadFile("img/photo1.jpg")
-queue.loadFile("img/photo2.jpg")
-queue.loadFile("img/photo3.jpg")
+queue.loadFile("fonts/Pixeboy.ttf")
+queue.loadFile("fonts/VT323-Regular.ttf")
+queue.loadFile("fonts/Zpix.ttf")
+queue.loadFile("img/ae.png")
+queue.loadFile("img/AI.png")
+queue.loadFile("img/ASE.png")
+queue.loadFile("img/AU.png")
+queue.loadFile("img/battery.png")
+queue.loadFile("img/bili.png")
+queue.loadFile("img/border.svg")
+queue.loadFile("img/border2.svg")
+queue.loadFile("img/C4D.png")
+queue.loadFile("img/collection.png")
+queue.loadFile("img/comment.png")
+queue.loadFile("img/email.png")
+queue.loadFile("img/FCP.png")
+queue.loadFile("img/heart.png")
+queue.loadFile("img/icon.png")
+queue.loadFile("img/ins-bg-g.png")
+queue.loadFile("img/ins-bg.png")
+queue.loadFile("img/ins-trans-2.png")
+queue.loadFile("img/ins-trans.png")
 queue.loadFile("img/ins1.png")
 queue.loadFile("img/ins2.png")
 queue.loadFile("img/ins3.png")
 queue.loadFile("img/ins4.png")
+queue.loadFile("img/logo.png")
+queue.loadFile("img/photo1.jpg")
+queue.loadFile("img/photo2.jpg")
+queue.loadFile("img/photo3.jpg")
+queue.loadFile("img/photo4.jpg")
+queue.loadFile("img/profile.png")
+queue.loadFile("img/PS.png")
+queue.loadFile("img/sec01.png")
+queue.loadFile("img/sec02.png")
+queue.loadFile("img/sec03.png")
+queue.loadFile("img/sec04.png")
+queue.loadFile("img/sec05.png")
+queue.loadFile("img/sec06.png")
+queue.loadFile("img/sec07.png")
+queue.loadFile("img/sec08.png")
+queue.loadFile("img/star.gif")
+queue.loadFile("img/tag.png")
+queue.loadFile("img/weixin.jpeg")
+
 queue.on("complete",event =>{
-    console.log("complete!")
+    // $("#loading").css("transition","1.2s")
+    var tl = new TimelineMax({});
+    var loadblocks = $(".loadblock").toArray().sort(function(){return 0.5-Math.random()});
+    // console.log(loadblocks )
+    // console.log(loading )
+    tl
+        .staggerTo(loadblocks,0.1,{opacity:0,ease:Power0.easeNone},0.01,"+=1.3")
+        .to("#loading img",0.1,{scaleY:0,ease:Power0.easeNone},"-=0.3")
+        .to("#progressbar",0.1,{scaleY:0,ease:Power0.easeNone},"-=0.3")
+        .staggerFromTo([".instagram",".project",".title"],0.3,{autoAlpha:0,x:20,y:20},{autoAlpha:1,x:0,y:0,ease:Back.easeOut},0.2)
+        .staggerFromTo([".ins-profile",".ins-bg",".ins-photo",".ins-button"],0.2,{autoAlpha:0,y:20},{autoAlpha:1,y:0,ease:Back.easeOut},0.18,"-=0.8")
+        .staggerFromTo([".about p",".about h2",".softul",".ability"],0.15,{autoAlpha:0,y:20},{autoAlpha:1,y:0,ease:Back.easeOut},0.12,"-=0.4")
+        .staggerFromTo([".title h1",".title span"],0.2,{autoAlpha:0,y:20},{autoAlpha:1,y:0,ease:Back.easeOut,onComplete:function(){
+            $(".ins-photo").css("animation","ins-loop 2.5s steps(37) both infinite");
+            // $("#loading").remove()
+        }},0.08,"-=0")
 })
 // 
+queue.on("progress",event =>{
+    // $("#loading").css("transition","1.7s")
+    // console.log(event)
+    var progress = Math.floor(event.progress*100);
+    // console.log(progress);
+    // console.log(progress);
+    $("#progress").html(progress)
+    $("#inbar").css("width",progress*398/100)
+    // console.log(progress)
+    if (progress == 100){
+        // $("#loading img").css("animation","blink 0.2s infinite ease")
+        $("#progress").css("animation","blink 0.2s infinite ease")
+        // $("#progressbar").css("animation","blink 0.2s infinite ease")
+    }
+})
 
 </script>
 <script>
