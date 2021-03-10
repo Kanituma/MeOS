@@ -88,6 +88,8 @@ ul li img {
     /* display: none; */
 }
 .loadblocks {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     -webkit-flex-flow: column wrap;
     justify-content: flex-start;
