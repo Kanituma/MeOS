@@ -145,6 +145,7 @@ ul li img {
     line-height: 30px;
     font-weight: medium;
     font-size: 22px;
+    color: white;
     /* letter-spacing: ; */
 }
 #progress::after{
