@@ -113,13 +113,13 @@ ul li img {
     /* z-index: 999; */
 }
 #outbar,#inbar {
-    width: 403px;
+    width: 406px;
     height: 30px;
     position: absolute;
     left: 0;
     top: 0;
     border: 3px solid white;
-    -webkit-font-smoothing: antialiased;
+    
 
     
 }
@@ -131,6 +131,8 @@ ul li img {
     background:url(../img/inbar.png) no-repeat;
     background-size: cover;
     border: 0px solid white;
+    -webkit-font-smoothing: antialiased;
+    width: 0;
 }
 #progress {
     position: absolute;
