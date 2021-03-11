@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/> -->
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='format-detection' content='telephone=no'> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>MeOS | Dive Deep Into Web</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-r.css">
     <link rel="stylesheet" href="js/main.js">
     <link rel="icon" href="img/icon.png" type="image/x-icon">
 </head>    
@@ -45,7 +51,7 @@
     <div class="menu-button">
         <!-- <div class="head-logo"></div> -->
         <ul id="topl">
-            <img src="img/logo.png" style="margin:0px 10px" alt="">
+            <img src="img/logo.png" style="margin:0px 0.6vw 0 0.8vw; width:1.6vw;height: 1.5vw;" alt="">
             <li class="checked">ABOUT</li>
             <li>WORKS</li>
             <li>LIFE</li>
@@ -65,12 +71,17 @@
     <div class="instagram pixwrap-b">
         <ul class="ins-profile">
             <li><img src="img/profile.png" alt=""></li>
-            <li class="ins-name bar" style="font-size: 24px;">_D_E_M_I_32</li>
+            <li class="ins-name bar" style="font-size: 1.5em;">_D_E_M_I_32</li>
         </ul>
-        <div style="border-width=5px" class="ins-bg"></div>
+        
         <!-- 不知道为什么pixwrap和background-image是冲突的 -->
-        <div class="ins-photo"></div>
-        <div class="ins-cover"></div>
+        <div class="ins-inner">
+            <div style="border-width=5px" class="ins-bg"></div>
+            <div class="ins-photo"></div>
+            <div class="ins-cover"></div>
+            <div class="ins-frame"></div>
+        </div>
+       
         <!-- <div ></div> -->
         <ul class="ins-button">
             <li><img class="heart" src="img/heart.png" alt=""><span class="htn">1,200</span></li>
@@ -151,7 +162,7 @@
                         <a class="link" href="https://www.bilibili.com/video/BV1Py4y1E74u/" target="_blank">介绍视频</a>
                     </div>
                 </div>
-                <p class="sec-title">历代衡制与货币变迁<span style="display:inline-block;color: #5f74d1;font-size: 16px;font-weight:bold;">.html</span></p>
+                <p class="sec-title">历代衡制与货币变迁<span style="display:inline-block;color: #5f74d1;font-size: 1em;font-weight:bold;">.html</span></p>
                 <!-- <p class="sec-type">WEB</p> -->
             </li>
             <li class="sec2 sec">
@@ -165,7 +176,7 @@
                         <a class="link" href="https://www.zcool.com.cn/work/ZNTEyNjE0OTY=.html" target="_blank">产品文档</a>
                     </div>
                 </div>
-                <p class="sec-title">Puzzle Gallery<span style="display:inline-block;color: #5f74d1;font-size: 16px;font-weight:bold;">.html</span></p>
+                <p class="sec-title">Puzzle Gallery<span style="display:inline-block;color: #5f74d1;font-size: 1em;font-weight:bold;">.html</span></p>
                 <!-- <p class="sec-type">H5</p> -->
             </li>
            
@@ -180,7 +191,7 @@
                         <a class="link" href="https://s3.ax1x.com/2021/03/08/6lc4Fe.jpg" target="_blank">关系图设计</a>
                     </div>
                 </div>
-                <p class="sec-title">[练习]天空之城<span style="display:inline-block;color: #5f74d1;font-size: 16px;font-weight:bold;">.html</span></p>
+                <p class="sec-title">[练习]天空之城<span style="display:inline-block;color: #5f74d1;font-size: 1em;font-weight:bold;">.html</span></p>
                 <!-- <p class="sec-type">APP</p> -->
             </li>
             <li class="sec4 sec">
@@ -193,7 +204,7 @@
                         <a class="link" href="http://okasus.gitee.io/heiseimusic" target="_blank">网站直达</a>
                     </div>
                 </div>
-                <p class="sec-title">[练习]平成音乐赏<span style="display:inline-block;color: #5f74d1;font-size: 16px;font-weight:bold">.html</span></p>
+                <p class="sec-title">[练习]平成音乐赏<span style="display:inline-block;color: #5f74d1;font-size: 1em;font-weight:bold">.html</span></p>
                 <!-- <p class="sec-type">WEB</p> -->
             </li>
             <li class="sec5 sec">
@@ -207,7 +218,7 @@
                         <a class="link" href="https://www.zcool.com.cn/work/ZNTEyNDM4NDA=.html" target="_blank">产品文档</a>
                     </div>
                 </div>
-                <p class="sec-title">口袋急救<span style="display:inline-block;color: #b577da;font-size: 16px;font-weight:bold;">.apk</span></p>
+                <p class="sec-title">口袋急救<span style="display:inline-block;color: #b577da;font-size: 1em;font-weight:bold;">.apk</span></p>
                 <!-- <p class="sec-type">APP</p> -->
             </li>
             <li class="sec6 sec">
@@ -220,7 +231,7 @@
                         <a class="link" href="" target="_blank">整理中...</a>
                     </div>
                 </div>
-                <p class="sec-title">记账APP<span style="display:inline-block;color: #b577da;font-size: 16px;font-weight:bold;">.apk</span></p>
+                <p class="sec-title">记账APP<span style="display:inline-block;color: #b577da;font-size: 1em;font-weight:bold;">.apk</span></p>
                 <!-- <p class="sec-type">APP</p> -->
             </li>
             <li class="sec7 sec">
@@ -233,7 +244,7 @@
                         <a class="link" href="https://www.bilibili.com/video/BV1JV411Y7SK/" target="_blank">查看视频</a>
                     </div>
                 </div>
-                <p class="sec-title">视频后期<span style="display:inline-block;color: #66805c;font-size: 16px;font-weight:bold">.mp4</span></p>
+                <p class="sec-title">视频后期<span style="display:inline-block;color: #66805c;font-size: 1em;font-weight:bold">.mp4</span></p>
                 <!-- <p class="sec-type">WEB</p> -->
             </li>
             <li class="sec8 sec">
@@ -243,10 +254,10 @@
                 <div class="hover">
                     <span class="divwork">UX&nbsp;&&nbsp;UI</span>
                     <div class="linkdiv">
-                        <a class="link" href="https://weibo.com/tv/show/1034:4612555457363971?from=old_pc_videoshow" target="_blank">查看视频</a>
+                        <a class="link" href="https://v.qq.com/x/page/u3233mavj0u.html" target="_blank">查看视频</a>
                     </div>
                 </div>
-                <p class="sec-title">数据可视化<span style="display:inline-block;color: #66805c;font-size: 16px;font-weight:bold;">.mp4</span></p>
+                <p class="sec-title">数据可视化<span style="display:inline-block;color: #66805c;font-size: 1em;font-weight:bold;">.mp4</span></p>
             </li>
           
             
@@ -282,7 +293,7 @@
                 <p class="life-title">饭圈剪辑</p>
                 <div class="life-item">
                     <a class="ptlink" href="http://t.cn/AiuuGyKY?m=4427382897009611&u=7098498245" target="_blank">混剪1</a>
-                    <a class="ptlink" href="https://weibo.com/tv/show/1034:4612547006103590?from=old_pc_videoshow" target="_blank">混剪2</a>
+                    <a class="ptlink" href="https://v.qq.com/x/page/k3233in40mz.html" target="_blank">混剪2</a>
                     <a class="ptlink" href="https://video.weibo.com/show?fid=1034:4445839360196611" target="_blank">仿综艺小剧场</a>
                 </div>
              <img class="lifeimg pixwrap-m" src="img/photo4.jpg" alt="">
@@ -369,13 +380,11 @@ queue.loadFile("img/sec08.png")
 queue.loadFile("img/star.gif")
 queue.loadFile("img/tag.png")
 queue.loadFile("img/weixin.jpeg")
-
+var insscale = window.innerWidth/1680
 queue.on("complete",event =>{
-    // $("#loading").css("transition","1.2s")
+    $(".ins-inner").css("transform","translateX(-50%) scale("+insscale+")")
     var tl = new TimelineMax({});
     var loadblocks = $(".loadblock").toArray().sort(function(){return 0.5-Math.random()});
-    // console.log(loadblocks )
-    // console.log(loading )
     tl
         .staggerTo(loadblocks,0.1,{opacity:0,ease:Power0.easeNone},0.01,"+=1.3")
         .to("#loading img",0.1,{scaleY:0,ease:Power0.easeNone},"-=0.3")
@@ -385,23 +394,16 @@ queue.on("complete",event =>{
         .staggerFromTo([".about p",".about h2",".softul",".ability"],0.15,{autoAlpha:0,y:20},{autoAlpha:1,y:0,ease:Back.easeOut},0.12,"-=0.4")
         .staggerFromTo([".title h1",".title span"],0.2,{autoAlpha:0,y:20},{autoAlpha:1,y:0,ease:Back.easeOut,onComplete:function(){
             $(".ins-photo").css("animation","ins-loop 2.5s steps(37) both infinite");
-            // $("#loading").remove()
         }},0.08,"-=0")
 })
-// 
 queue.on("progress",event =>{
-    // $("#loading").css("transition","1.7s")
-    // console.log(event)
+
     var progress = Math.floor(event.progress*100);
-    // console.log(progress);
-    // console.log(progress);
+
     $("#progress").html(progress)
-    $("#inbar").css("width",progress*396/100)
-    // console.log(progress)
+    $("#inbar").css("width",progress*0.236*window.innerWidth/100)
     if (progress == 100){
-        // $("#loading img").css("animation","blink 0.2s infinite ease")
         $("#progress").css("animation","blink 0.2s infinite ease")
-        // $("#progressbar").css("animation","blink 0.2s infinite ease")
     }
 })
 

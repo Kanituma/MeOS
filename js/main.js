@@ -1,5 +1,6 @@
 // loading
-
+console.log(window.innerWidth)
+console.log(window.innerHeight)
 
 
 var text1 =["_D_E_M_I_32","1,243","214","THINGS ABOUT","Me,myself and I"]
@@ -34,6 +35,7 @@ var items=[item1,item2,item3,item4]
 
     
 $("#topl li").click(function(){
+    $(".ins-frame").css("display","block")
     $(".ins-cover").css("animation","instrans 2s steps(20) forwards ")
     var oldn="."+$(".checked").html().toLowerCase()
     var oldi = $(".checked").index()
@@ -81,5 +83,6 @@ $("#topl li").click(function(){
     function changeIns(){
         $(".ins-photo").css({"background-image":"url(img/ins"+newi+".png)"})
         setTimeout(function(){$(".ins-cover").css("animation","")},1000)
+        setTimeout(function(){$(".ins-frame").css("display","none")},1000)
     }
 })
